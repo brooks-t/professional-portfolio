@@ -1,6 +1,7 @@
 :root {
     --head-foot: darkslategray;
     --main-bg-color: lightgray;
+    --page-margin-right: 5%;
 }
 
 html {
@@ -32,7 +33,7 @@ header {
     background-color: lightblue;
     height: 55px;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 5%;
     padding-right: 10px;
 }
 
@@ -42,13 +43,20 @@ header {
 }
 
 nav {
-    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: var(--page-margin-right);
+    width: 25%;
+    justify-content: space-between;
 }
 
 nav a {
     color: lightblue;
-    margin-left: 10px;
-    font-size: ;
+    margin: 3%;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 4px 4px 4px;
+    border-bottom: 4px solid lightblue;
 }
 
 .banner {
@@ -67,7 +75,7 @@ nav a {
     font-size: 35px;
     padding: 5px;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: var(--page-margin-right);
 }
 
 main {
@@ -82,19 +90,19 @@ aside {
     flex-direction: column;
     text-align: right;
     border-right: 3px solid darkslategray;
-    padding-right: 10px;
+    padding-right: 2%;
     font-size: 40px;
     color: darkslategray;
-    width: 15%;
-    margin-top: 20px;
+    width: 20%;
+    margin-top: 2%;
 }
 
 #about-me-content {
     color: darkslategray;
-    padding-left: 10px;
+    padding-left: 2%;
     width: 75%;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: var(--page-margin-right);
+    margin-top: 2%;
 }
 
 #work-content {
@@ -103,11 +111,11 @@ aside {
     flex-direction: row;
     flex-wrap: wrap;
     color: darkslategray;
-    padding-left: 10px;
+    padding-left: 2%;
     width: 75%;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 2%;
     justify-content: space-between;
+    margin-right: var(--page-margin-right);
 }
 
 .main-work {
@@ -135,8 +143,8 @@ aside {
 
 .sub-work {
     position: relative;
-    width: 45%;
-    margin-top: 10px;
+    width: 49%;
+    margin-top: 2%;
 }
 
 .sub-work-image {
@@ -154,10 +162,9 @@ aside {
 }
 
 #contact-me-content {
-    display: flex;
+    border: 2px solid chartreuse;
+    margin-top: 2%;
     width: 75%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 10px;
+    margin-right: var(--page-margin-right);
+    padding-left: 2%;
 }
