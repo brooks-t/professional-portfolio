@@ -69,3 +69,36 @@ nav a {
     margin-bottom: 20px;
     margin-right: 20px;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    border-right: 3px solid darkslategray;
+    padding-right: 10px;
+    font-size: 40px;
+    color: darkslategray;
+}
+
+#about-me-header {
+    width: 25%;
+}
+
+#about-me-content {
+    color: darkslategray;
+    padding-left: 10px;
+}
+
+#work {
+    color: blue;
+}
+
+#contact-me {
+    color: blue;
+}
