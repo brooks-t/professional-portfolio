@@ -72,6 +72,7 @@ nav a {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     padding-top: 20px;
 }
@@ -84,21 +85,68 @@ aside {
     padding-right: 10px;
     font-size: 40px;
     color: darkslategray;
-}
-
-#about-me-header {
-    width: 25%;
+    width: 15%;
+    margin-top: 20px;
 }
 
 #about-me-content {
     color: darkslategray;
     padding-left: 10px;
+    width: 75%;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
-#work {
-    color: blue;
+#work-content {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: darkslategray;
+    padding-left: 10px;
+    width: 75%;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
-#contact-me {
-    color: blue;
+.main-work {
+    position: relative;
+    width: 100%;
+}
+
+.main-work-image {
+    width: 100%;
+    height: auto;
+    border: 5px solid lightblue;
+}
+
+.main-work-image-text {
+    position: absolute;
+    background-color: lightblue;
+    padding: 10px;
+    align-self: flex-end;
+    bottom: 20px;
+}
+
+.main-work-image-text h3 {
+    font-size: 25px;
+}
+
+.sub-work {
+    width: 45%;
+    margin-top: 10px;
+}
+
+.sub-work-image {
+    width: 100%;
+    height: auto;
+    border: 5px solid lightblue;
+}
+
+.sub-work-image-text {
+    position: absolute;
+    background-color: lightblue;
+    padding: 10px;
+    align-self: flex-end;
+    bottom: 20px;
 }
