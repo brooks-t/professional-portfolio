@@ -50,3 +50,22 @@ nav a {
     margin-left: 10px;
     font-size: ;
 }
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    background-color: darkturquoise;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.sub-title {
+    color: darkslategray;
+    background-color: lightblue;
+    font-size: 35px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
