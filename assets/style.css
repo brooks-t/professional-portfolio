@@ -1,11 +1,14 @@
 :root {
-    --head-foot: darkslategray;
+    --darkest-color: #4c586f;
+    --lightest-color: #ebeced;
+    --border-color: lightblue;
+    --image-text: #4c586f;
     --main-bg-color: lightgray;
     --page-margin-right: 5%;
 }
 
 html {
-    background-color: var(--main-bg-color);
+    background-color: var(--lightest-color);
 }
 
 body {
@@ -19,7 +22,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    background-color: var(--head-foot);
+    background-color: var(--darkest-color);
     width: 100%;
     height: 75px;
     align-items: center;
@@ -27,19 +30,14 @@ header {
 }
 
 .title {
-    color: darkslategray;
+    color: var(--darkest-color);
     display: flex;
     font-size: 40px;
-    background-color: lightblue;
+    background-color: var(--lightest-color);
     height: 55px;
     align-items: center;
     padding-left: 5%;
     padding-right: 10px;
-}
-
-.banner {
-    display: flex;
-    flex-direction: row;
 }
 
 nav {
@@ -51,12 +49,12 @@ nav {
 }
 
 nav a {
-    color: lightblue;
+    color: var(--lightest-color);
     margin: 3%;
     font-size: 20px;
     text-decoration: none;
     padding: 0 4px 4px 4px;
-    border-bottom: 4px solid lightblue;
+    border-bottom: 4px solid var(--lightest-color);
 }
 
 .banner {
@@ -64,14 +62,15 @@ nav a {
     flex-direction: row;
     width: 100%;
     height: 200px;
-    background-color: darkturquoise;
+    background-image: url(img/textured-background-1.jpg);
+    object-fit: cover;
     align-items: flex-end;
     justify-content: flex-end;
 }
 
 .sub-title {
-    color: darkslategray;
-    background-color: lightblue;
+    color: var(--darkest-color);
+    background-color: var(--lightest-color);
     font-size: 35px;
     padding: 5px;
     margin-bottom: 20px;
@@ -89,16 +88,16 @@ aside {
     display: flex;
     flex-direction: column;
     text-align: right;
-    border-right: 3px solid darkslategray;
+    border-right: 3px solid var(--darkest-color);
     padding-right: 2%;
     font-size: 40px;
-    color: darkslategray;
+    color: var(--darkest-color);
     width: 20%;
     margin-top: 2%;
 }
 
 #about-me-content {
-    color: darkslategray;
+    color: var(--darkest-color);
     padding-left: 2%;
     width: 75%;
     margin-right: var(--page-margin-right);
@@ -110,7 +109,7 @@ aside {
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    color: darkslategray;
+    color: var(--image-text);
     padding-left: 2%;
     width: 75%;
     margin-top: 2%;
@@ -126,12 +125,12 @@ aside {
 .main-work-image {
     width: 100%;
     height: auto;
-    border: 5px solid lightblue;
+    border: 5px solid var(--border-color);
 }
 
 .main-work-image-text {
     position: absolute;
-    background-color: lightblue;
+    background-color: var(--border-color);
     padding: 10px;
     align-self: flex-end;
     bottom: 20px;
@@ -150,21 +149,32 @@ aside {
 .sub-work-image {
     width: 100%;
     height: auto;
-    border: 5px solid lightblue;
+    border: 5px solid var(--border-color);
 }
 
 .sub-work-image-text {
     position: absolute;
-    background-color: lightblue;
+    background-color: var(--border-color);
     padding: 10px;
     align-self: flex-end;
     bottom: 20px;
 }
 
 #contact-me-content {
-    border: 2px solid chartreuse;
     margin-top: 2%;
     width: 75%;
     margin-right: var(--page-margin-right);
     padding-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact-me-content a {
+    color: darkslategray;
+    font-size: 20px;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 4px solid darkslategray;
 }
