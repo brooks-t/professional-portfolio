@@ -57,12 +57,22 @@ nav a {
     border-bottom: 4px solid var(--lightest-color);
 }
 
+a:hover {
+    transform: scale(1.1);
+    color: lightblue;
+    border-color: lightblue;
+}
+
+img:hover {
+    opacity: 0.6;
+}
+
 .banner {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 200px;
-    background-image: url(img/textured-background-1.jpg);
+    background-image: url(img/cork-board.png);
     object-fit: cover;
     align-items: flex-end;
     justify-content: flex-end;
