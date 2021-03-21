@@ -1,3 +1,5 @@
+/* TODO: add comments throughout CSS */
+/*TODO: refactor css to see if you can condense it*/
 :root {
     --darkest-color: #4c586f;
     --lightest-color: #ebeced;
@@ -6,6 +8,7 @@
     --main-bg-color: lightgray;
     --page-margin-right: 5%;
 }
+/* TODO: increase margin-right of page to increase readibility (condense things towards center) */
 
 html {
     background-color: var(--lightest-color);
@@ -47,7 +50,6 @@ nav {
     margin-right: var(--page-margin-right);
     width: 50%;
     justify-content: flex-end;
-    border: 2px solid chartreuse;
 }
 
 nav a {
@@ -140,6 +142,7 @@ aside {
     border: 5px solid var(--border-color);
 }
 
+/* TODO: increase size of text boxes */
 .main-work-image-text {
     position: absolute;
     background-color: var(--border-color);
@@ -191,7 +194,7 @@ aside {
     border-bottom: 4px solid darkslategray;
 }
   
-  /* Cards are stacked on top of each other at 768px or smaller */
+  /*website is optimized for screens 768px or smaller */
   @media screen and (max-width: 768px) {
     
     .title {
@@ -220,21 +223,40 @@ aside {
         margin: 0;
     }
 
+    main {
+        justify-content: center;
+    }
+
+    aside {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-right: 0;
+        border-bottom: 3px solid var(--darkest-color);
+        margin-top: 1%;
+        flex-direction: row;
+    }
+
+    aside h3 {
+        display: inline-block;
+        margin: 1%;
+    }
+
+    #about-me-content {
+        width: 90%;
+    }
+
+    #work-content {
+        width: 90%;
+    }
+
+    .sub-work {
+        width: 100%;
+    }
+
+    #contact-me-content {
+        width: 100%;
+    }
+
   }
-
- /* nav {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: var(--page-margin-right);
-    width: 50%;
-    justify-content: flex-end;
-    border: 2px solid chartreuse;
-}
-
-nav a {
-    color: var(--lightest-color);
-    margin-left: 1.5%;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 0 4px 4px 4px;
-    border-bottom: 4px solid var(--lightest-color);*/
