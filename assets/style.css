@@ -1,5 +1,4 @@
-/* TODO: add comments throughout CSS */
-/*TODO: refactor css to see if you can condense it*/
+/* created variables for common colors and margins */
 :root {
     --darkest-color: #4c586f;
     --lightest-color: #ebeced;
@@ -22,6 +21,7 @@ body {
     padding-bottom: 2%;
 }
 
+/* created header with name and navigation */
 header {
     display: flex;
     flex-direction: row;
@@ -33,6 +33,7 @@ header {
     padding: 0.5% 0 0.5% 0;
 }
 
+/* top-left my name with some spacing to the left */
 .title {
     color: var(--darkest-color);
     display: flex;
@@ -44,6 +45,7 @@ header {
     padding-right: 10px;
 }
 
+/* positioning nav to the right and giving it room to move */
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -52,6 +54,7 @@ nav {
     justify-content: flex-end;
 }
 
+/* added bottom underline style to each link */
 nav a {
     color: var(--lightest-color);
     margin-left: 1.5%;
@@ -61,16 +64,19 @@ nav a {
     border-bottom: 4px solid var(--lightest-color);
 }
 
+/* nav links grow slightly and highlight on hover */
 a:hover {
     transform: scale(1.1);
     color: lightblue;
     border-color: lightblue;
 }
 
+/* images 'highligh' on hover */
 img:hover {
     opacity: 0.6;
 }
 
+/* corkboard banner as separator between nav and main content */
 .banner {
     display: flex;
     flex-direction: row;
@@ -82,6 +88,7 @@ img:hover {
     justify-content: flex-end;
 }
 
+/* job title */
 .sub-title {
     color: var(--darkest-color);
     background-color: var(--lightest-color);
@@ -98,6 +105,7 @@ main {
     padding-top: 20px;
 }
 
+/* styling each sections header aside */
 aside {
     display: flex;
     flex-direction: column;
@@ -110,6 +118,7 @@ aside {
     margin-top: 2%;
 }
 
+/* styling content in about me section */
 #about-me-content {
     color: var(--darkest-color);
     padding-left: 2%;
@@ -118,6 +127,7 @@ aside {
     margin-top: 2%;
 }
 
+/* styling content in work section */
 #work-content {
     display: flex;
     position: relative;
@@ -131,17 +141,20 @@ aside {
     margin-right: var(--page-margin-right);
 }
 
+/* container for main project image */
 .main-work {
     position: relative;
     width: 100%;
 }
 
+/* styling for main project image */
 .main-work-image {
     width: 100%;
     height: auto;
     border: 5px solid var(--border-color);
 }
 
+/* styling for image text box */
 .main-work-image-text {
     position: absolute;
     background-color: var(--border-color);
@@ -150,23 +163,27 @@ aside {
     bottom: 40px;
 }
 
+/* giving the text some styles - inceased line height to avoid overlap */
 .main-work-image-text h3 {
     font-size: 30px;
     line-height: 40px;
 }
 
+/* container for sub projects - allows for two in each row */
 .sub-work {
     position: relative;
     width: 49%;
     margin-top: 2%;
 }
 
+/* styling sub project images */
 .sub-work-image {
     width: 100%;
     height: auto;
     border: 5px solid var(--border-color);
 }
 
+/* styling image text for sub projects */
 .sub-work-image-text {
     position: absolute;
     background-color: var(--border-color);
@@ -175,6 +192,7 @@ aside {
     bottom: 20px;
 }
 
+/* container for contact me links */
 #contact-me-content {
     margin-top: 2%;
     width: var(--main-content-width);
@@ -186,6 +204,7 @@ aside {
     align-items: center;
 }
 
+/* styling links to give similar effect to header links */
 #contact-me-content a {
     color: darkslategray;
     font-size: 20px;
@@ -262,7 +281,7 @@ aside {
 
   }
 
-  /*optimized for mobile devices 769px or less*/
+  /*optimized for mobile devices 769px or less - just a few things needed updating to improve on the previous break*/
   @media screen and (max-width: 769px) {
     
     :root {
