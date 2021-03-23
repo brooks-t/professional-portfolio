@@ -9,7 +9,6 @@
     --page-margin-right: 10%;
     --main-content-width: 70%;
 }
-/* TODO: increase margin-right of page to increase readibility (condense things towards center) */
 
 html {
     background-color: var(--lightest-color);
@@ -143,17 +142,17 @@ aside {
     border: 5px solid var(--border-color);
 }
 
-/* TODO: increase size of text boxes */
 .main-work-image-text {
     position: absolute;
     background-color: var(--border-color);
-    padding: 10px;
+    padding: 20px;
     align-self: flex-end;
-    bottom: 20px;
+    bottom: 40px;
 }
 
 .main-work-image-text h3 {
-    font-size: 25px;
+    font-size: 30px;
+    line-height: 40px;
 }
 
 .sub-work {
@@ -195,8 +194,8 @@ aside {
     border-bottom: 4px solid darkslategray;
 }
   
-  /*website is optimized for screens 768px or smaller */
-  @media screen and (max-width: 768px) {
+  /*website is optimized for screens 992px or smaller */
+  @media screen and (max-width: 992px) {
     
     .title {
         width: 100%;
@@ -222,6 +221,7 @@ aside {
 
     .sub-title {
         margin: 0;
+        text-align: center;
     }
 
     main {
@@ -261,3 +261,16 @@ aside {
     }
 
   }
+
+  /*optimized for mobile devices 769px or less*/
+  @media screen and (max-width: 769px) {
+    
+    :root {
+        --page-margin-right: 2.5%;
+    }
+
+    #contact-me-content a {
+        padding: 4px 4px 4px 4px;
+        margin: 4px; 
+    }
+}
