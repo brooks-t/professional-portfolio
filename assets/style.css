@@ -6,7 +6,8 @@
     --border-color: lightblue;
     --image-text: #4c586f;
     --main-bg-color: lightgray;
-    --page-margin-right: 5%;
+    --page-margin-right: 10%;
+    --main-content-width: 70%;
 }
 /* TODO: increase margin-right of page to increase readibility (condense things towards center) */
 
@@ -113,7 +114,7 @@ aside {
 #about-me-content {
     color: var(--darkest-color);
     padding-left: 2%;
-    width: 75%;
+    width: var(--main-content-width);
     margin-right: var(--page-margin-right);
     margin-top: 2%;
 }
@@ -125,7 +126,7 @@ aside {
     flex-wrap: wrap;
     color: var(--image-text);
     padding-left: 2%;
-    width: 75%;
+    width: var(--main-content-width);
     margin-top: 2%;
     justify-content: space-between;
     margin-right: var(--page-margin-right);
@@ -177,7 +178,7 @@ aside {
 
 #contact-me-content {
     margin-top: 2%;
-    width: 75%;
+    width: var(--main-content-width);
     margin-right: var(--page-margin-right);
     padding-left: 2%;
     display: flex;
