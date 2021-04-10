@@ -43,6 +43,7 @@ header {
     align-items: center;
     padding-left: 5%;
     padding-right: 10px;
+    border-radius: 0 5px 5px 0;
 }
 
 /* positioning nav to the right and giving it room to move */
@@ -81,9 +82,11 @@ img:hover {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 200px;
-    background-image: url(img/cork-board.png);
-    object-fit: cover;
+    height: 50vh;
+    background-image: url(../img/seattle-skyline_ben-dutton.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     align-items: flex-end;
     justify-content: flex-end;
 }
@@ -93,9 +96,10 @@ img:hover {
     color: var(--darkest-color);
     background-color: var(--lightest-color);
     font-size: 35px;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 20px;
     margin-right: var(--page-margin-right);
+    border-radius: 5px;
 }
 
 main {
