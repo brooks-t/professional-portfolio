@@ -4,4 +4,4 @@
 
 Link: https://brooks-t.github.io/professional-portfolio/
 
-![screenshot of my professional portfolio](assets/img/pro-portfolio-screenshot.png)
+![screenshot of my professional portfolio](./assets/img/screenshot.png)
