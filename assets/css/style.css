@@ -5,8 +5,9 @@
     --border-color: lightblue;
     --image-text: #4c586f;
     --main-bg-color: lightgray;
-    --page-margin-right: 10%;
-    --main-content-width: 70%;
+    --page-margin-left: 20%;
+    --page-margin-right: 20%;
+    --main-content-width: 100%;
 }
 
 html {
@@ -29,35 +30,28 @@ header {
     background-color: var(--darkest-color);
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0.5% 0 0.5% 0;
 }
 
-/* top-left my name with some spacing to the left */
-.title {
-    color: var(--darkest-color);
+#header-content {
     display: flex;
-    font-size: 40px;
-    background-color: var(--lightest-color);
-    height: 55px;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 10px;
+    max-width: 700px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 /* positioning nav to the right and giving it room to move */
 nav {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    margin-right: var(--page-margin-right);
-    width: 50%;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 /* added bottom underline style to each link */
 nav a {
     color: var(--lightest-color);
-    margin-left: 1.5%;
     font-size: 20px;
     text-decoration: none;
     padding: 0 4px 4px 4px;
@@ -71,6 +65,15 @@ a:hover {
     border-color: lightblue;
 }
 
+.main-work-image-text a:hover {
+    transform: scale(1.1);
+    color: salmon;
+}
+
+.sub-work-image-text a:hover {
+    color: salmon;
+}
+
 /* images 'highligh' on hover */
 img:hover {
     opacity: 0.6;
@@ -79,51 +82,64 @@ img:hover {
 /* corkboard banner as separator between nav and main content */
 .banner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    height: 200px;
-    background-image: url(img/cork-board.png);
-    object-fit: cover;
-    align-items: flex-end;
-    justify-content: flex-end;
+    height: 50vh;
+    background-image: url(../img/seattle-skyline_ben-dutton.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-name {
+    color: var(--darkest-color);
+    display: flex;
+    font-size: 50px;
+    background-color: var(--lightest-color);
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 4%;
 }
 
 /* job title */
-.sub-title {
+.job-title {
     color: var(--darkest-color);
     background-color: var(--lightest-color);
     font-size: 35px;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 20px;
-    margin-right: var(--page-margin-right);
+    border-radius: 5px;
+    width: 40%;
+    text-align: center;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 20px;
+    margin: auto;
+    justify-content: center;
+    max-width: 700px;
 }
 
-/* styling each sections header aside */
-aside {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    border-right: 3px solid var(--darkest-color);
-    padding-right: 2%;
-    font-size: 40px;
+.content-headers {
+    font-size: 30px;
+    margin-top: 4%;
+    border-bottom: 3px solid var(--darkest-color);
     color: var(--darkest-color);
-    width: 20%;
-    margin-top: 2%;
+}
+
+#about-me-header {
 }
 
 /* styling content in about me section */
 #about-me-content {
     color: var(--darkest-color);
-    padding-left: 2%;
     width: var(--main-content-width);
-    margin-right: var(--page-margin-right);
     margin-top: 2%;
 }
 
@@ -131,14 +147,12 @@ aside {
 #work-content {
     display: flex;
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     color: var(--image-text);
-    padding-left: 2%;
     width: var(--main-content-width);
     margin-top: 2%;
     justify-content: space-between;
-    margin-right: var(--page-margin-right);
 }
 
 /* container for main project image */
@@ -172,8 +186,8 @@ aside {
 /* container for sub projects - allows for two in each row */
 .sub-work {
     position: relative;
-    width: 49%;
-    margin-top: 2%;
+    width: 100%;
+    margin-top: 4%;
 }
 
 /* styling sub project images */
@@ -196,8 +210,6 @@ aside {
 #contact-me-content {
     margin-top: 2%;
     width: var(--main-content-width);
-    margin-right: var(--page-margin-right);
-    padding-left: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

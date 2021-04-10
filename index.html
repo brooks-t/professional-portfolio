@@ -4,98 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Brooks Tiffany Portfolio</title>
 </head>
 <body>
     <!--Header with name and navigation-->
     <header>
-        <section class="title">
-            <h1>Brooks Tiffany</h1>
-        </section>
-        <nav>
-            <!--links jump to corresponding sections-->
-            <a href="#about-me-header">About Me</a>
-            <a href="#work-header">Work</a>
-            <a href="#contact-me-header">Contact Me</a>
-            <a href="#">Resume</a>
-        </nav>
+        <div id="header-content">
+            <nav>
+                <!--links jump to corresponding sections-->
+                <a href="#about-me-header">About Me</a>
+                <a href="#work-header">Work</a>
+                <a href="#contact-me-header">Contact Me</a>
+                <a href="./assets/img/brooks-resume.pdf" target="_blank">Resume</a>
+            </nav>
+        </div>
+
     </header>
     <!--"corkboard" banner with subtitle to separate header from main content-->
     <section class="banner">
-        <div class ="sub-title">
+        <div class="my-name">
+            <h1>Brooks Tiffany</h1>
+        </div>
+        <div class ="job-title">
             <h2>Full Stack Web Developer | UX Professional</h2>
         </div>
     </section>
     <main>
-        <!--About me: created aside as container for each section header-->
-        <aside id="about-me-header">
-            <h3>About</h3>
-            <h3>Me</h3>
-        </aside>
         <!--ABOUT ME: currently using placeholder text-->
-        <section id="about-me-content">
-            <p>Cat ipsum dolor sit amet, cereal boxes make for five star accommodation so shove bum in owner's face like camera lens cats are cute. Funny little cat chirrup noise shaking upright tail when standing next to you kitty. Eat the rubberband.</p>
-            <br>
-            <p>Why dog in house? i'm the sole ruler of this home and its inhabitants smelly, stupid dogs, inferior furballs time for night-hunt, human freakout playing with balls of wool i love cats i am one wake up scratch humans leg for food then purr then i have a and relax with tail in the air.</p>
-            <br>
-            <p>Purr while eating wake up human for food at 4am, pet me pet me pet me pet me, bite, scratch, why are you petting me scream at teh bath. Mark territory ears back wide eyed. Find something else more interesting throw down all the stuff in the kitchen, and walk on a keyboard. What the heck just happened, something feels fishy cats go for world domination nyaa nyaa i want to go outside let me go outside nevermind inside is better.</p>
+        <section id="about-me-header" class="content-headers">
+            <h3>About Me</h3>
         </section>
-        <!--Work header aside-->
-        <aside id="work-header">
-            <h3>Work</h3>
-        </aside>
+        <section id="about-me-content">
+            <p>I'm a full-stack web developer who recently earned a certificate from the University of Washintgon Full-Stack Web Development Bootcamp. I also have a Master's Degree in Human Centered Design. My full-stack web development skills combined with my UX experience make me an exceptional candidate for a company looking for someone who lives at the intersection of Design and Development.</p>
+            <br>
+        </section>
+
         <!--WORK content with placeholder images and titles-->
+        <section id="work-header" class="content-headers">
+            <h3>Work</h3>
+        </section>
         <section id="work-content">
             <div class="main-work">
-                <img class="main-work-image" src="assets/img/nasa.jpg" alt="placeholder image">
+                <a href="https://brooks-t.github.io/travel-buddy/" target="_blank"><img class="main-work-image" src="assets/img/travel-buddy.png" alt="placeholder image"></a>
                 <div class="main-work-image-text">
-                    <h3>Project 1</h3>
-                    <p>Dev Skill 1</p>
+                    <h3>Travel Buddy</h3>
+                    <p>HTML/CSS/JS/API</p>
+                    <br>
+                    <p><a href="https://github.com/brooks-t/travel-buddy" target="_blank">GitHub</a></p>
                 </div>
             </div>
             <div class="sub-work">
-                <img class="sub-work-image" src="assets/img/subkitten-1.jpg" alt="placeholder image">
+                <a href="https://brooks-t.github.io/weather-dashboard/" target="_blank"><img class="sub-work-image" src="assets/img/weather.png" alt="placeholder image"></a>
                 <div class="sub-work-image-text">
-                    <h3>Project 2</h3>
-                    <p>Dev Skill 2</p>
+                    <h3>Weather Dashboard</h3>
+                    <p>HTML/CSS/JS/API</p>
+                    <br>
+                    <p><a href="https://github.com/brooks-t/weather-dashboard" target="_blank">GitHub</a></p>
                 </div>
             </div>
             <div class="sub-work">
-                <img class="sub-work-image" src="assets/img/subkitten-1.jpg" alt="placeholder image">
+                <a href="https://brooks-t.github.io/code-quiz/" target="_blank"><img class="sub-work-image" src="assets/img/coding-quiz.png" alt="placeholder image"></a>
                 <div class="sub-work-image-text">
-                    <h3>Project 3</h3>
-                    <p>Dev Skill 3</p>
-                </div>
-            </div>
-            <div class="sub-work">
-                <img class="sub-work-image" src="assets/img/subkitten-1.jpg" alt="placeholder image">
-                <div class="sub-work-image-text">
-                    <h3>Project 4</h3>
-                    <p>Dev Skill 4</p>
-                </div>
-            </div>
-            <div class="sub-work">
-                <img class="sub-work-image" src="assets/img/subkitten-1.jpg" alt="placeholder image">
-                <div class="sub-work-image-text">
-                    <h3>Project 5</h3>
-                    <p>Dev Skill 5</p>
+                    <h3>Coding Quiz</h3>
+                    <p>HTML/CSS/JS</p>
+                    <br>
+                    <p><a href="https://github.com/brooks-t/code-quiz" target="_blank">GitHub</a></p>
                 </div>
             </div>
         </section>
         <!--Contact me aside-->
-        <aside id="contact-me-header">
-            <h3>Contact</h3>
-            <h3>Me</h3>
-        </aside>
+
         <!--CONTACT ME content-->
+        <section id="contact-me-header" class="content-headers">
+            <h3>Contact Me</h3>
+        </section>
         <section id="contact-me-content">
                 <a href="#">540.223.8561</a>
                 <a href="mailto:brooks.t.tiffany@gmail.com">brooks.t.tiffany@gmail.com</a>
-                <a href="https://github.com/brooks-t">GitHub</a>
-                <a href="#">Twitter</a>
-                <a href="#">Spotify</a>
+                <a href="https://github.com/brooks-t" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/brookstiffany/" target="_blank">LinkedIn</a>
         </section>
     </main>    
 </body>
