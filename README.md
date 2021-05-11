@@ -1,6 +1,6 @@
 # professional-portfolio
 
-## This project is for homework 2 in the UW coding bootcamp. It's meant to showcase the HTML and CSS skills that we have learned so far. It also doubles as a placeholder for what will eventually be our professional portfolio to showcase all of our work.
+## This portfolio is meant to showcase what I've learned so far in the UW COding Bootcamp. It's more of a placeholder for now as I'll continue to update and polish it before I show it to potential employers.
 
 Link: https://brooks-t.github.io/professional-portfolio/
 
